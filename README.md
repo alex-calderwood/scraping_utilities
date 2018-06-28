@@ -9,6 +9,7 @@ Feel free to submit pull requests or give me a code review! Any feedback appreci
 ## Sparknotes Summaries
 
 Usage:
+
     First make sure a folder exists called corpus_data:
         mkdir corpus_data/
     Then:
