@@ -1,0 +1,1731 @@
+/* $Header: /usr/local/cvsroot/district/web/css/default.css,v 7.3 2011/08/25 15:50:28 rajeshk Exp $ */
+
+/* RPM Packages: ao-dcecf-web-* */
+/* RPM Permissions: 444 */
+/* RPM Owner: nobody */
+/* RPM Group: nobody */
+/* RPM Flags: configure */
+
+/******** Tables ********/
+
+table.center {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+table.alignment {
+	border:0;
+}
+
+table.alignment td {
+	vertical-align:top;
+}
+table.alignment td.label {
+	text-align:right;
+}
+
+table.report {
+	margin-left:auto;
+	margin-right:auto;
+	width:99%;
+	border:solid 1px black;
+	empty-cells:show;
+	border-collapse:collapse;
+}
+table.report th {
+	vertical-align:top;
+	border:solid 1px black;
+	padding:3px;
+}
+table.report td {
+	vertical-align:top;
+	border:solid 1px black;
+	padding:3px;
+}
+
+table.selectCriteria {
+}
+table.selectCriteria .label {
+	font-weight:bold;
+}
+table.selectCriteria .info {
+	font-weight:normal;
+}
+
+table.criteriaFooter {
+	margin-left:auto;
+	margin-right:auto;
+	border:solid 1px black;
+	empty-cells:show;
+	border-collapse:collapse;
+}
+table.criteriaFooter th {
+	vertical-align:top;
+	padding:3px;
+	border:solid 1px black;
+}
+table.criteriaFooter td {
+	vertical-align:top;
+	padding:3px;
+	border:solid 1px black;
+}
+
+
+
+/******** Headers ********/
+
+/* Blue header at the top of the page */
+.pageHeader {
+	font:bold 110% arial,helvetica;
+	color:#0000cc;
+}
+
+.reportMainHeader {
+	font-weight:bold;
+	font-size:200%;
+	text-align:center;
+}
+
+.reportSubHeader {
+	font-size:150%;
+	font-weight:bold;
+	text-align:center;
+}
+
+/* Report header information, such as date. "label" would be the word "Date",
+	itself, and "info" would be the actual date */
+.reportSubHeader span.label {
+	margin-left:7px;
+}
+
+.reportSubHeader span.info {
+	font-weight:normal;
+	margin-right:7px;
+}
+
+/******** filters *******/
+
+.filterHeader {
+	font-weight:bold;
+	font-size:150%;
+}
+
+.filterLabel {
+	font-weight:bold;
+	text-align:right;
+}
+
+
+/******** Widgets ********/
+
+div.fakeSelect {
+	border:solid 2px;
+	border-color:#7b7d7b #f7f7f7 #f7f7f7 #7b7d7b;
+	background-color:#ffffff;
+	overflow:auto;
+	padding-left:2px;
+}
+
+/* see sans-serif above */
+div.fakeOption {
+	width:100%;
+	cursor:pointer;
+}
+
+div.fakeSelect .delineated {
+	border-top:solid 1px #cccccc;
+}
+
+div.fakeOptionHighlight {
+	color:HighlightText;
+	background-color:Highlight;
+}
+div.fakeOptionCannotDelete {
+	color:GrayText;
+}
+
+span.fakeSelect {
+	border:solid 2px;
+	border-color:#7b7d7b #f7f7f7 #f7f7f7 #7b7d7b;
+	background-color:#ffffff;
+	background:url(/graphics/select_down_arrow.gif) no-repeat top right;
+	padding:0 1.2em 0 0.2em;
+	font-size:small;
+}
+
+span.required {
+	color:red;
+}
+
+ul.fakeSelect {
+	list-style:none;
+	border:solid 2px;
+	border-color:#7b7d7b #f7f7f7 #f7f7f7 #7b7d7b;
+	background-color:#ffffff;
+	background:url(/graphics/select_up_and_down_arrows.gif) no-repeat top right;
+	overflow:auto;
+	padding:1px;
+	margin:-20px 0 0 13.1em;
+}
+
+li.fakeOptionHighlight {
+	margin-right:16px;
+	color:HighlightText;
+	background-color:Highlight;
+}
+
+/******** Icons ********/
+
+/* icons that have an onclick event */
+img.link {
+	cursor:pointer;
+}
+
+.iconContainer {
+	white-space:nowrap;
+}
+
+.qc_icon {
+	cursor: pointer;
+	height:22px;
+	width:21px;
+	vertical-align:bottom;
+	margin-top:1px;
+}
+
+.padlock_icon {
+	cursor: pointer;
+	height:22px;
+	width:27px;
+	vertical-align:bottom;
+}
+
+.receipt_icon {
+	cursor:pointer;
+	height:14px;
+	width:14px;
+	vertical-align:bottom;
+}
+
+.notes_icon {
+	cursor:pointer;
+	height:22px;
+	width:21px;
+	vertical-align:bottom;
+	margin-top:1px;
+}
+
+.task_icon {
+	cursor:pointer;
+	height:22px;
+	width:21px;
+	vertical-align:bottom;
+	margin-top:1px;
+}
+
+.receiptLink {
+	background-image:url(/graphics/silverball.gif);
+	background-repeat:no-repeat;
+	vertical-align:text-top;
+	margin-top:2px;
+	margin-right:3px;
+	overflow:hidden;
+	font:0/0 arial;
+	display:-moz-inline-box; /* Mozilla */
+	display:inline-block; /* IE, Opera and Safari */
+	cursor:pointer;
+	height:14px;
+	width:14px;
+}
+
+.capacity_icon {
+	cursor:pointer;
+	height:28px;
+	width:21px;
+	vertical-align:bottom;
+}
+
+.reload_icon {
+	cursor:pointer;
+	height:22px;
+	width:22px;
+	vertical-align:bottom;
+}
+
+.sort_arrow_icon {
+	height:8px;
+	width:8px;
+}
+
+.loading_spinner {
+	height:18px;
+	width:18px;
+	position:absolute;
+}
+
+.cmecfLogo, .helpImage, .eorderInfo {
+	position:absolute;
+	cursor:pointer;
+
+	/* for alt text */
+	font-weight:bold;
+	font-family:arial,helvetica,clean,sans-serif;
+}
+
+.cmecfLogo {
+	top:0px;
+	left:0px;
+	z-index:1;
+	height:40px;
+	width:96px;
+	color:#cddbeb; /* for alt text */
+}
+
+.helpImage {
+	display:-moz-inline-box; /* Mozilla */
+	display:inline-block; /* IE, Opera and Safari */
+	top:0;
+	right:0px;
+	z-index:20;
+	height:40px;
+	width:55px;
+	color:yellow; /* for alt text */
+}
+
+.eorderInfo {
+	top:7px;
+	right:60px;
+	z-index:1;
+	color:yellow; /* for alt text */
+}
+
+.tag_remove_icon {
+	width:12px;
+	height:12px;
+	cursor:pointer;
+	margin-left:.15em;
+}
+
+/******** Errors and Messages ********/
+
+/* Message indicating no records were found when running a report */
+.noRecordsMsg {
+	font:bold 150% serif;
+	text-align:center;
+}
+
+/* red box listing errors from a process */
+.errorList {
+	margin:1em;
+	padding:.3em;
+	background-color:red;
+	font-family:arial;
+	font-size:10pt;
+	text-align:left;
+	border:1px solid black;
+}
+.errorList div {
+	position:relative;
+	left:1em;
+	font-style:italic;
+}
+
+
+input.required, select.required {
+	background-color:yellow;
+}
+
+input.hasError, select.hasError {
+	border:thin solid red;
+}
+
+
+
+/******** Formatting ********/
+
+/* Group a set of options or prompts within an inset box */
+.optionsBox {
+	width:50%; /* width can be overridden with the style attribute if necessary */
+	margin:.5em;
+
+	background-color:#deecfc;
+	border-top:thin solid #bccada;
+	border-left:thin solid #bccada;
+	border-right:thin solid #effdff;
+	border-bottom:thin solid #effdff;
+
+}
+
+.optionsBox div { padding:.3em } /* each line within the box */
+
+
+/* highlight and highlight2 should be used toghether to alternately highlight a table or list */
+.highlight  {
+	background-color:#deecfc
+}
+.highlight2 {  }
+
+/* the currently selected item, perhaps by the user interactively */
+/* Note:"selected" is already used by yui menus */
+.selectedItem {
+	border:thin dotted gray;
+}
+.selectedItem td {
+	border-top:thin dotted gray;
+	border-bottom:thin dotted gray;
+	empty-cells:show;
+}
+
+.alert_font {
+	font-family:arial, helvetica;
+	font-size:12pt;
+	font-weight:bold;
+}
+
+.fine_print {
+	font-family:helvetica;
+	font-size:8pt;
+}
+
+.note {
+	font-style:italic;
+	font-size:80%;
+	font-weight:normal;
+}
+
+div.label, span.label {
+	font-weight:bold;
+}
+
+/* The temporary status message displayed for long processes */
+#Status {
+	position:absolute;
+	color:red;
+	margin-right:14px;
+	right:3px;
+	font-family:arial, helvetica;
+	font-size:10pt;
+}
+
+
+/*********  styles for Court Information report  ***********/
+
+div#indent10px {
+	margin-left:10px;
+}
+
+div#indent20px {
+	margin-left:20px;
+}
+
+div#indent40px {
+	margin-left:40px;
+}
+
+#courtinfo {
+	width:75%;
+	background-color:#D9D9D9;
+	font-family:"lucida grande", verdana, sans-serif;
+	font-size:8pt;
+}
+
+#courtinfowhite {
+	width:75%;
+	background-color:#ffffff;
+	font-family:"lucida grande", verdana, sans-serif;
+	font-size:8pt;
+}
+
+#courtinfo tbody tr td {
+	background-color:#ffffff;
+}
+#courtinfo tbody tr.gray td {
+	background-color:#D9D9D9;
+}
+#courtinfo th {
+	background-color:#486591;
+	color:#ffffff;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	padding:3px 8px;
+}
+
+
+
+/******** Menus ********/
+
+
+
+body {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+.yuimenubar {
+	visibility:visible;
+	position:static;
+}
+
+#cmecfMainContent {
+	overflow:auto;
+	height:93%;
+	width:100%;
+}
+
+.yuimenu .yuimenu,
+.yuimenubar .yuimenu {
+	visibility:hidden;
+	position:absolute;
+	top:-10000px;
+	left:-10000px;
+}
+
+.yuimenubar li,
+.yuimenu li {
+	list-style-type:none;
+}
+
+.yuimenubar ul,
+.yuimenu ul,
+.yuimenubar li,
+.yuimenu h6,
+.yuimenubar h6 {
+	margin:0;
+	padding:0;
+}
+
+.yuimenubar ul {
+	*zoom:1;
+}
+
+.yuimenubar .yuimenu ul {
+	*zoom:normal;
+}
+
+.yuimenubar>.bd>ul:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	height:0;
+	line-height:0;
+}
+
+.yuimenubaritem {
+	float:left;
+	padding:4px;
+	margin:0;
+	border:solid 2px #0000aa;
+	text-align:center;
+}
+
+/* This colors the menu correctly before the menu code is loaded. */
+
+.yuimenubaritem a {
+	color:#ffffff;
+	font-size:85%;
+	cursor:pointer;
+	text-decoration:none;
+	white-space:nowrap;
+	font-weight:bold;
+	font-family:arial,helvetica,clean,sans-serif;
+	outline:none;
+}
+
+.yuimenuitem a {
+	color:#000000;
+	font-weight:normal;
+}
+
+
+
+.yuimenubaritemlabel,
+.yuimenuitemlabel {
+	display:block;
+}
+
+.yuimenuitemlabel .helptext {
+	font-style:normal;
+	display:block;
+	margin:-1em 0 0 10em;
+}
+
+.yui-menu-shadow {
+	position:absolute;
+	visibility:hidden;
+	z-index:-1;
+}
+
+.hide-scrollbars * {
+	overflow:hidden;
+}
+
+.hide-scrollbars select {
+	display:none;
+}
+
+.yuimenu.show-scrollbars,
+.yuimenubar.show-scrollbars {
+	overflow:visible;
+}
+
+.yuimenu.hide-scrollbars .yui-menu-shadow,
+.yuimenubar.hide-scrollbars .yui-menu-shadow {
+	overflow:hidden;
+}
+
+.yuimenu.show-scrollbars .yui-menu-shadow,
+.yuimenubar.show-scrollbars .yui-menu-shadow {
+	overflow:auto;
+}
+
+.yuimenu .topscrollbar,
+.yuimenu .bottomscrollbar {
+
+    height: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.yuimenu .topscrollbar {
+    background-image:url(/graphics/menu_up_arrow.png);
+}
+
+.yuimenu .topscrollbar_disabled {
+    background-image:url(/graphics/menu_up_arrow_disabled.png);
+}
+
+.yuimenu .bottomscrollbar {
+    background-image:url(/graphics/menu_down_arrow.png);
+}
+
+.yuimenu .bottomscrollbar_disabled {
+    background-image:url(/graphics/menu_down_arrow_disabled.png);
+}
+
+/* Menu styles */
+
+.yuimenubar {
+	background-color:#0000aa;
+	color:#ffffff;
+	font-weight:bold;
+	font-family:arial,helvetica,clean,sans-serif;
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+.yuimenu {
+	color:#000000;
+	border-top:solid 2px #effdfd;
+	border-right:solid 2px #8997a7;
+	border-bottom:solid 2px #8997a7;
+	/* use background-image instead of a left border */
+	background-image:url(/graphics/menu-edge.gif);
+	background-color:#cddbeb;
+
+	font-family:arial,helvetica,clean,sans-serif;
+	font-weight:normal;
+	margin:0;
+	padding:0px 3px 0px 3px;
+}
+
+.yuimenu .yui-menu-body-scrolled {
+	overflow:hidden;
+}
+
+/* Group titles */
+
+.yuimenu h6,
+.yuimenubar h6 {
+	font-weight:normal;
+	margin:0 0 0 3px;
+	border:solid 1px;
+	border-color:#ffffff #cccccc #cccccc #ffffff;
+	text-align:left;
+}
+
+.yuimenubar h6 {
+	float:left;
+	padding:4px 12px;
+	border-width:0 1px 0 0;
+}
+
+.yuimenubar .yuimenu h6 {
+	float:none;
+}
+
+.yuimenu h6 {
+	border-width:1px 0 0 0;
+	padding:5px 10px 0 10px;
+}
+
+.yuimenu ul.first-of-type,
+.yuimenu ul.hastitle,
+.yuimenu h6.first-of-type {
+	border-width:0;
+}
+
+/* MenuItem and MenuBarItem styles */
+
+.yuimenuitem {
+	*border-bottom:solid 1px #cddbeb;
+}
+
+.yuimenuitemlabel,
+.yuimenubaritemlabel {
+	font-size:85%;
+	cursor:pointer;
+	text-decoration:none;
+	white-space:nowrap;
+}
+
+.yuimenuitemlabel {
+	text-align:left;
+}
+
+.yuimenuitemlabel {
+	padding-top: 1px;
+	padding-right: 15px;
+	padding-bottom: 1px;
+	padding-left: 3px;
+}
+
+.yuimenubaritemlabel {
+	border-width:0;
+	border-style:solid;
+	border-color:#c4c4be;
+	padding:4px 24px;
+}
+
+.yuimenubaritemlabel {
+	color:#ffffff;
+}
+
+.yuimenuitemlabel {
+	color:#000000;
+}
+
+.yuimenubaritem-hassubmenu {
+    margin:0 0 0 5px;
+    background:url(/graphics/menubaritem_submenuindicator_selected.png) right center no-repeat;
+}
+
+.yuimenuitem-hassubmenu {
+    background:url(/graphics/menuitem_submenuindicator.png) right center no-repeat;
+}
+
+.yuimenuitem-checked {
+    background:url(/graphics/menuitem_checkbox.png) left center no-repeat;
+}
+
+.yuimenuitemlabel .helptext {
+	margin-top:-1.1em;
+	*margin-top:-1.2em;
+}
+
+.yuimenuitem {
+	padding-top:1px;
+	padding-right:15px;
+	padding-bottom:1px;
+	padding-left:3px;
+}
+.yuimenu li {
+	/*
+	   This sets the blue edge of the menu away from highlighting and horizontal
+	   rules, and makes the submenus overlap the edge completely
+	 */
+	margin:0 0 0 9px;
+}
+
+
+
+/* Matches the help text for a menu item */
+
+/* Selected MenuItem */
+
+.yuimenubaritem-selected {
+	background-color:#cddbeb;
+	border-color:#8997a7 #effdfd #effdfd #8997a7;
+}
+
+a.yuimenubaritemlabel-selected {
+	color:#0000aa;
+}
+
+.yuimenuitem-selected {
+	background-color:#deecfc;
+}
+
+.yuimenuitemlabel-selected {
+	color:#000000;
+}
+
+.yuimenubaritem-hassubmenu-selected {
+    margin:0 0 0 5px;
+    background-image:url(/graphics/menubaritem_submenuindicator_selected.png);
+}
+
+.yuimenuitem-hassubmenu-selected {
+    background-image:url(/graphics/menuitem_submenuindicator_selected.png);
+}
+
+.yuimenuitem-checked-selected {
+    background-image:url(/graphics/menuitem_checkbox_selected.png);
+}
+
+/* Matches disabled menu items */
+
+.yuimenubaritemlabel-disabled,
+.yuimenuitemlabel-disabled {
+	cursor:default;
+}
+
+.yuimenubaritem-hassubmenu-disabled {
+    margin:0 0 0 5px;
+    background-image:url(/graphics/menubaritem_submenuindicator_disabled.png);
+}
+
+.yuimenuitem-hassubmenu-disabled {
+    background-image:url(/graphics/menuitem_submenuindicator_disabled.png);
+}
+
+.yuimenuitem-checked-disabled {
+    background-image:url(/graphics/menuitem_checkbox_disabled.png);
+}
+
+.yuimenu h6 {
+	border-color:#deecfc #abb9c9 #abb9c9 #deecfc;
+}
+.yuimenu li.beforeSpace {
+  border-bottom:1px solid #8997a7;
+}
+.yuimenu li.afterSpace {
+  border-top:1px solid #effdfd;
+}
+
+div#topmenu {
+	height:40px
+}
+
+/* reposition menubar text to vertically center it in the sized bar */
+.yuimenubar div.bd li.yuimenubaritem {
+	margin-top:5px;
+}
+
+/* This margin moves the menu away from the CM/ECF logo. */
+.yuimenubar div.bd ul {
+	margin-left:110px;
+}
+
+/* but do not reposition the text inside the menus */
+.yuimenubar div.bd div.bd ul {
+	margin:0;
+}
+
+/* Menu item classes */
+
+.menutextbold {
+	font-weight:bold;
+}
+
+.menutextitalic {
+	font-style:italic;
+}
+
+.menutextbolditalic {
+	font-weight:bold;
+	font-style:italic;
+}
+
+
+
+/******** Containers ********/
+
+
+.yui-overlay {
+	position:absolute;
+	display:block;
+}
+
+.yui-tt {
+	visibility:hidden;
+	position:absolute;
+	color:#333;
+	background-color:#FDFFB4;
+	font-family:arial,helvetica,verdana,sans-serif;
+	padding:2px;
+	border:1px solid #FCC90D;
+	font:100% sans-serif;
+	width:auto;
+}
+
+* html body.masked select {
+	visibility:hidden;
+}
+
+* html div.yui-panel-container select {
+	visibility:inherit;
+}
+
+* html div.drag select {
+	visibility:hidden;
+}
+
+* html div.hide-select select {
+	visibility:hidden;
+}
+
+.mask {
+	z-index:0;
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	-moz-opacity:0.5;
+	opacity:.50;
+	filter:alpha(opacity=50);
+	background-color:#CCC;
+}
+
+.hide-scrollbars * {
+	overflow:hidden;
+}
+
+.hide-scrollbars textarea, .hide-scrollbars select {
+	overflow:hidden;
+	display:none;
+}
+
+.show-scrollbars textarea, .show-scrollbars select {
+	overflow:visible;
+}
+
+.yui-panel-container {
+	position:absolute;
+	background-color:transparent;
+	z-index:6;
+	visibility:hidden;
+	overflow:visible;
+	width:auto;
+}
+
+.yui-panel-container.focused {
+}
+
+
+.yui-panel-container.matte {
+	padding:3px;
+	background-color:#FFF;
+}
+
+.yui-panel-container.matte .underlay {
+	display:none;
+}
+
+.yui-panel-container.shadow {
+	padding:0px;
+	background-color:transparent;
+}
+
+.yui-panel-container.shadow .underlay {
+	visibility:inherit;
+	position:absolute;
+	background-color:#CCC;
+	top:3px;left:3px;
+	z-index:0;
+	width:100%;
+	height:100%;
+	-moz-opacity:0.7;
+	opacity:.70;
+	filter:alpha(opacity=70);
+	zoom:1;
+}
+
+.yui-panel {
+	visibility:hidden;
+	border-collapse:separate;
+	position:relative;
+	left:0px;top:0px;
+	border:2px solid;
+	background-color:#cddbeb;
+	border-color:#deecfc #abb9c9 #abb9c9 #deecfc;
+	z-index:1;
+	overflow:hidden;
+}
+
+.yui-panel .hd {
+	background-color:#0000aa;
+	color:#FFF;
+	font-size:100%;
+	line-height:100%;
+	border:1px solid #FFF;
+	border-bottom:1px solid #000;
+	font-weight:bold;
+	overflow:visible;
+	padding:4px;
+}
+
+.yui-panel .bd {
+	overflow:auto;
+	padding:4px;
+}
+
+.yui-panel .bd p {
+	margin:0 0 1em;
+}
+
+.yui-panel .container-close {
+	position:absolute;
+	top:2px;
+	right:2px;
+	z-index:6;
+	height:22px;
+	width:22px;
+	margin:0px;
+	padding:0px;
+	background:url(/graphics/panel-close.gif) no-repeat;
+	cursor:pointer;
+	visibility:inherit;
+}
+
+.yui-panel .ft {
+	padding:4px;
+	overflow:hidden;
+}
+
+.yui-simple-dialog .bd .yui-icon {
+	background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+	margin-right:10px;
+	float:left;
+}
+
+.yui-simple-dialog .bd span.blckicon {
+	background:url(/graphics/blck16_1.gif) no-repeat;
+}
+
+.yui-simple-dialog .bd span.alrticon {
+	background:url(/graphics/alrt16_1.gif) no-repeat;
+}
+
+.yui-simple-dialog .bd span.hlpicon {
+	background:url(/graphics/hlp16_1.gif) no-repeat;
+}
+
+.yui-simple-dialog .bd span.infoicon {
+	background:url(/graphics/info16_1.gif) no-repeat;
+}
+
+.yui-simple-dialog .bd span.warnicon {
+	background:url(/graphics/warn16_1.gif) no-repeat;
+}
+
+.yui-simple-dialog .bd span.tipicon {
+	background:url(/graphics/tip16_1.gif) no-repeat;
+}
+
+.yui-dialog .ft, .simple-dialog .ft {
+	padding-bottom:5px;
+	padding-right:5px;
+	text-align:right;
+}
+
+.yui-dialog form, .yui-simple-dialog form {
+	margin:0;
+}
+
+.button-group button {
+	text-decoration:none;
+	background-color:#E4E4E4;
+	color:#333;
+	cursor:pointer;
+	vertical-align:middle;
+	border:2px solid #797979;
+	border-top-color:#FFF;
+	border-left-color:#FFF;
+	margin:2px;
+	padding:2px;
+}
+
+.button-group button.default {
+	font-weight:bold;
+}
+
+.button-group button:active {
+	border:2px solid #E4E4E4;
+	background-color:#BBB;
+	border-top-color:#333;
+	border-left-color:#333;
+}
+
+
+
+/******** Book pages ********/
+
+.book-page {
+	display:none;
+}
+
+.book-buttons {
+	float:right;
+	margin-right:5px;
+	white-space:nowrap;
+	text-align:right;
+	cursor:pointer;
+}
+
+/*********** Calendar box pages **********/
+
+.calendar-navigation {
+	position:absolute;
+	right: 2em;
+	top: 3em;
+	white-space:nowrap;
+	cursor:pointer;
+}
+
+td.box-shown-date {
+	border:solid 1px #000000;
+	vertical-align:top;
+}
+
+td.box-dummy-date {
+	background:#E8E8E8;
+}
+
+td.box-hidden-date {
+	font-size:0;
+	border:0;
+}
+
+th.box-header {
+	border:1px solid #cccccc;
+	border-bottom:none;
+	vertical-align:top;
+	text-align:center;
+	background:#e1e1e1 url(/graphics/table-header-gradient.gif) repeat-x scroll;
+}
+
+tr.box-week {
+	width:100%;
+}
+
+/******** Spec Editing ********/
+
+div.edit-spec-place-holder {
+	height:20px;
+	width:40px;
+}
+
+.edit-spec-properties-header {
+	font-weight:bold;
+}
+
+span.edit-spec-item {
+	cursor:move;
+	white-space:nowrap;
+}
+
+span.edit-spec-filter-label {
+	display:-moz-inline-box; /* Mozilla */
+	display:inline-block; /* IE, Opera and Safari */
+	width:13em;
+	padding-right:0.1em;
+	text-align:right;
+	font-weight:bold;
+}
+
+.transparent {
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;
+}
+
+label.edit-spec-label {
+	font-weight:normal;
+}
+
+ul.tabbed {
+	list-style:none;
+	padding:3px;
+	margin:0.5em 0 0 0;
+	border:solid;
+	border-width:0 0 1px 0;
+}
+
+li.tabbed {
+	display:inline;
+	border:solid;
+	border-width:1px 1px 0 1px;
+	margin:0 0.3em;
+	padding:3px;
+	background-color:#eeeeee;
+	cursor:pointer;
+}
+
+li.selectedtab {
+	padding-bottom:4px;
+	background-color:white;
+}
+
+/******** Report Alignment Table ********/
+
+.report-alignment {
+	width:100%;
+	border:0;
+	padding:0;
+}
+
+.report-alignment td {
+	vertical-align:top;
+	text-align:left;
+	border:0;
+	padding:0;
+}
+
+.edit-spec-alignment {
+	width: 100%;
+	border-collapse:collapse;
+	border:2px solid #FFFFFF;
+}
+
+.edit-spec-alignment td {
+	vertical-align:top;
+	text-align:left;
+}
+
+.report-alignment hr {
+	margin: 0;
+}
+
+.report-alignment td.right {
+	text-align:right;
+}
+
+/******* Data Table **********/
+
+.data-table {
+	width: 100%;
+	margin:0;
+	padding:0;
+	vertical-align:top;
+	text-align:left;
+	border-collapse:separate;
+	*border-collapse:collapse;
+	border-spacing:0pt;
+	empty-cells:show;
+}
+
+.data-table th {
+	border:1px solid #CBCBCB;
+	border-bottom:none;
+	text-align:left;
+	vertical-align:top;
+	background: #D8D8DA url(/graphics/gray_gradiant.png) repeat-x scroll;
+	white-space:nowrap;
+}
+
+.data-table td {
+	text-align:left;
+	vertical-align:top;
+	margin:0;
+	padding:0;
+	border:0;
+	border-right:1px solid #CBCBCB;
+}
+
+.data-table tr {
+	border-color: #FFFFFF #CBCBCB;
+}
+
+.data-table-tr-even {
+	background-color: #EDF5FF;
+}
+
+.data-table-tr-odd {
+	background-color: #FFFFFF;
+}
+
+.data-table-tr-disabled {
+	background-color: #D3D3D3;
+}
+
+.data-table-tr-hidden {
+	display:none;
+}
+
+.data-table-tr-last {
+	border-bottom: #CBCBCB solid 1px;
+}
+
+.data-table-tr-last td {
+	border-bottom: #CBCBCB solid 1px;
+}
+
+/******** Report Filter Table ********/
+
+.report-filter {
+	border:0;
+}
+
+.report-filter td {
+	vertical-align:top;
+	text-align:left;
+}
+
+.report-filter td.label {
+	text-align:right;
+}
+
+.edit-spec-filter {
+	border-collapse:collapse;
+	border:solid 2px white;
+}
+
+.edit-spec-filter td {
+	vertical-align:top;
+	text-align:left;
+}
+
+/******** Report Header Table ********/
+
+.report-header {
+	font-size:150%;
+	font-weight:bold;
+	text-align:center;
+	border:0;
+}
+
+.report-header td {
+	vertical-align:top;
+	text-align:center;
+}
+
+.edit-spec-header {
+	width: 100%;
+	font-size:150%;
+	font-weight:bold;
+	border-collapse:collapse;
+	border:solid 2px white;
+}
+
+.edit-spec-header td {
+	vertical-align:top;
+	text-align:center;
+}
+
+/******* Icons **********/
+
+.cmecfLogo {
+	position:absolute;
+	display:-moz-inline-box; /* Mozilla */
+	display:inline-block; /* IE, Opera and Safari */
+	top:0px;
+	left:0px;
+	z-index:1;
+	height:40px;
+	width:96px;
+	cursor:pointer;
+	vertical-align:text-bottom;
+}
+
+.helpImage {
+	position:absolute;
+	display:-moz-inline-box; /* Mozilla */
+	display:inline-block; /* IE, Opera and Safari */
+	top:0;
+	right:0px;
+	z-index:20;
+	height:40px;
+	width:55px;
+}
+
+/******** Text Effects **********/
+
+.shaded {
+	color:#A0A0A0;
+}
+
+.highlight {
+	background-color:yellow;
+}
+
+.boldface {
+	font-weight:bold;
+}
+
+.underline {
+	text-decoration:underline;
+}
+
+.capitalize {
+	text-transform:uppercase;
+}
+
+.lowercase {
+	text-transform:lowercase;
+}
+
+.larger {
+	font-size:1.5em;
+}
+
+.italic {
+	font-style:italic;
+}
+
+.pretendlink {
+	color:#0000ff;
+	cursor:pointer;
+}
+
+.smallertext {
+	font-size:smaller;
+}
+
+/************ media types ***********/
+
+.handheldonly {
+	display: none;
+}
+
+/************ calendars *************/
+
+.yui-calcontainer {
+	padding:5px;
+	background-color:#F7F9FB;
+	border:1px solid #7B9EBD;
+	font-size:120%;
+
+	/* Make this a popup - dont render in context */
+	position: absolute;
+	/* in FF hidden cuts off the calendar also */
+	overflow: inherit !important;
+	/* But in IE it keeps the iframe shim from interfering with other things */
+	overflow: hidden;
+	/* let the javascript position the calendar */
+	top: 0px; left: 0px;
+}
+
+.yui-calcontainer iframe {
+	position:absolute;
+	border:none;
+	margin:0;padding:0;
+	left:-1px;
+	top:-1px;
+	z-index:0;
+	width:50em;
+	height:50em;
+}
+
+.yui-calcontainer.multi {
+	padding:0;
+}
+
+.yui-calcontainer.multi .groupcal {
+	padding:5px;
+	background-color:transparent;
+	z-index:1;
+	float:left;
+	position:relative;
+	border:none;
+}
+
+.yui-calcontainer .title {
+	color:#000;
+	position:absolute;
+	top:0;
+	z-index:1;
+}
+
+.yui-calcontainer .close-icon {
+	position:absolute;
+	right:3px;
+	top:3px;
+	border:none;
+	z-index:1;
+}
+
+.yui-calcontainer .calclose {
+	background: url(/graphics/close.gif) no-repeat;
+	width:17px;
+	height:13px;
+	cursor:pointer;
+}
+
+/* Calendar element styles */
+
+.yui-calendar {
+	font:80% sans-serif;
+	text-align:center;
+	border-spacing:0;
+	border-collapse:separate;
+	position:relative;
+}
+
+.yui-calcontainer.withtitle {
+	padding-top:1.5em;
+}
+
+.yui-calendar .calnavleft {
+	position:absolute;
+	cursor:pointer;
+	top:2px;
+	bottom:0;
+	width:9px;
+	height:12px;
+	left:2px;
+	z-index:1;
+	background: url(/graphics/callt.gif) no-repeat;
+}
+
+.yui-calendar .calnavright {
+	position:absolute;
+	cursor:pointer;
+	top:2px;
+	bottom:0;
+	width:9px;
+	height:12px;
+	right:2px;
+	z-index:1;
+	background: url(/graphics/calrt.gif) no-repeat;
+}
+
+.yui-calendar td.calcell {
+	padding:.1em .2em;
+	border:1px solid #E0E0E0;
+	text-align:center;
+}
+
+.yui-calendar td.calcell a {
+	color:#003DB8;
+	text-decoration:none;
+}
+
+.yui-calendar td.calcell.today {
+	border:1px solid #000;
+}
+
+.yui-calendar td.calcell.oom {
+	cursor:default;
+	color:#999;
+	background-color:#EEE;
+	border:1px solid #E0E0E0;
+}
+
+.yui-calendar td.calcell.selected {
+	color:#003DB8;
+	background-color:#FFF19F;
+	border:1px solid #FF9900;
+}
+
+.yui-calendar td.calcell.calcellhover {
+	cursor:pointer;
+	color:#FFF;
+	background-color:#FF9900;
+	border:1px solid #FF9900;
+}
+
+.yui-calendar td.calcell.calcellhover a {
+	color:#FFF;
+}
+
+.yui-calendar td.calcell.restricted {
+	text-decoration:line-through;
+}
+
+.yui-calendar td.calcell.previous {
+	color:#CCC;
+}
+
+.yui-calendar td.calcell.highlight1 { background-color:#CCFF99; }
+.yui-calendar td.calcell.highlight2 { background-color:#99CCFF; }
+.yui-calendar td.calcell.highlight3 { background-color:#FFCCCC; }
+.yui-calendar td.calcell.highlight4 { background-color:#CCFF99; }
+
+.yui-calendar .calhead {
+	border:1px solid #E0E0E0;
+	vertical-align:middle;
+	background-color:#FFF;
+}
+
+.yui-calendar .calheader {
+	position:relative;
+	width:100%;
+	text-align:center;
+}
+
+.yui-calendar .calheader img {
+	border:none;
+}
+
+.yui-calendar .calweekdaycell {
+	color:#666;
+	font-weight:normal;
+	text-align:center;
+	width:1.5em;
+}
+
+.yui-calendar .calfoot {
+	background-color:#EEE;
+}
+
+.yui-calendar .calrowhead, .yui-calendar .calrowfoot {
+	color:#666;
+	font-size:9px;
+	font-style:italic;
+	font-weight:normal;
+	width:15px;
+}
+
+.yui-calendar .calrowhead {
+	border-right-width:2px;
+}
+
+/* CalendarNavigator */
+.yui-calendar a.calnav {
+	_position:relative;
+	padding-left:2px;
+	padding-right:2px;
+	text-decoration:none;
+	color:#000;
+}
+
+.yui-calendar a.calnav:hover {
+	border:1px solid #003366;
+	background-color:#6699cc;
+	background: url(/graphics/calgrad.png) repeat-x;
+	color:#fff;
+	cursor:pointer;
+}
+
+.yui-calcontainer .yui-cal-nav-mask {
+	position:absolute;
+	z-index:2;
+	display:none;
+
+	margin:0;
+	padding:0;
+
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	_width:0;    /* IE6, IE7 Quirks - width/height set programmatically to match container */
+	_height:0;
+
+	background-color:#000;
+	opacity:0.25;
+	*filter:alpha(opacity=25);
+}
+
+.yui-calcontainer .yui-cal-nav {
+	position:absolute;
+	z-index:3;
+	display:none;
+
+	padding:0;
+	top:1.5em;
+	left:50%;
+	width:10em;
+	margin-left:-5em;
+
+	border:1px solid #7B9EBD;
+	background-color:#F7F9FB;
+	font-size:93%;
+}
+
+.yui-calcontainer.withtitle .yui-cal-nav {
+	top:3.5em;
+}
+
+.yui-calcontainer .yui-cal-nav-y,
+.yui-calcontainer .yui-cal-nav-m,
+.yui-calcontainer .yui-cal-nav-b {
+	padding:2px 5px 2px 5px;
+}
+
+.yui-calcontainer .yui-cal-nav-b {
+	text-align:center;
+}
+
+.yui-calcontainer .yui-cal-nav-e {
+	margin-top:2px;
+	padding:2px;
+	background-color:#EDF5FF;
+	border-top:1px solid black;
+	display:none;
+}
+
+.yui-calcontainer .yui-cal-nav label {
+	display:block;
+	font-weight:bold;
+}
+
+.yui-calcontainer .yui-cal-nav-mc {
+	width:100%;
+	_width:auto; /* IE6 doesn't like width 100% */
+}
+
+.yui-calcontainer .yui-cal-nav-y input.yui-invalid {
+	background-color:#FFEE69;
+	border: 1px solid #000;
+}
+
+.yui-calcontainer .yui-cal-nav-yc {
+	width:3em;
+}
+
+.yui-calcontainer .yui-cal-nav-b button {
+	font-size:93%;
+	text-decoration:none;
+	cursor: pointer;
+	background-color: #79b2ea;
+	border: 1px solid #003366;
+	border-top-color:#FFF;
+	border-left-color:#FFF;
+	margin:1px;
+}
+
+.yui-calcontainer .yui-cal-nav-b .yui-default button {
+	/* not implemented */
+}
+
+/* Specific changes for calendar running under fonts/reset */
+.yui-calendar .calbody a:hover {background:inherit;}
+p#clear {clear:left; padding-top:10px;}
+
+
+span.calendarWrapper {
+	/* FF: Otherwise, the calendar does not scroll with the page */
+	position: relative !important;
+	/* IE: Otherwise, if the calendar goes off the bottom you cannot scroll to it */
+	position: static;
+}
+
+/* these two sit side by side with internal borders, making them appear as one field */
+
+input.dateTextField {
+	border-right-width: 0px;
+}
+
+input.calendarButton {
+	cursor:pointer;
+	width:26px; /* width of the image plus 2px for the right border */
+	background: url(/graphics/calendar.gif) no-repeat top right;
+	border-left-width: 0px;
+}
+
+/* Gray out disabled text box */
+
+input.disabled {
+	/* IE: Otherwise there is no real indication that field has been disabled */
+	background-color: #D3D3D3;
+	cursor: default;
+
+}

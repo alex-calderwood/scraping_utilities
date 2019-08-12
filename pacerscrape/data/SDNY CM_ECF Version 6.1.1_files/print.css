@@ -1,0 +1,31 @@
+/* $Header: /usr/local/cvsroot/district/web/css/print.css,v 6.2 2009/11/29 15:16:29 jpd Exp $ */
+
+/* RPM Packages: ao-dcecf-web-* */
+/* RPM Permissions: 444 */
+/* RPM Owner: nobody */
+/* RPM Group: nobody */
+/* RPM Flags: configure */
+
+.yuimenubar,
+.yuimenu,
+.cmecfLogo,
+.helpImage,
+.noprint {
+	display:none;
+}
+
+#cmecfMainContent {
+	color:black;
+	background-color:white;
+	position:static;
+	display:block;
+	height:100%;
+	overflow:visible;
+}
+
+body {
+	color:black;
+	background-color:white;
+	overflow:visible;
+	height:100%;
+}
